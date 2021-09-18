@@ -1,0 +1,64 @@
+171  docker ps 
+
+  172  docker pull alpine;docker pull ubuntu
+
+  173  docker images 
+
+  174  docker pull nginx 
+
+  175  docker images 
+
+  176  docker run nginx
+
+  177  docker inmages 
+
+  178  docker images
+
+  179  docker run -d nginx
+
+  180  docker ps 
+
+  181  docker exec -it 20612f122ab8 bash
+
+  182  docker images 
+
+  183  docker run -d ubuntu
+
+  184  docker ps 
+
+  185  docker ps -a
+
+  186  docker run -it -d ubuntu
+
+  187  docker ps 
+
+  188  docker ps -a
+
+  189  docker rm ad4c705f24d3
+
+  190  docker rmi ad4c705f24d3
+
+  191  docker kill 20612f122ab8
+
+  192  docker ps -a
+
+  193  docker rmi ad4c705f24d3
+
+  194  docker rm -f 20612f122ab8
+
+  195  docker rm -f e871c23058ca
+
+  196  docker rmi ad4c705f24d3
+
+  197  docker images 
+
+  198  docker rmi -f ubuntu
+
+  199  docker images 
+
+  200  docker ps -a 
+
+  201  docker rm -f $(docker ps -a -q)
+
+  202  docker rmi -f fb52e22af1b0
+
