@@ -62,3 +62,78 @@
 
   202  docker rmi -f fb52e22af1b0
 
+day 2  
+=======================
+   apt upgrade -y 
+
+   24  docker version
+
+   25  docker --version
+
+   26  docker images
+
+   27  docker ps -a 
+
+   28  docker run -d -p 82:80 nginx
+
+   29  docker ps -a 
+
+   30  docker ps 
+
+   31  docker export c8a21 > nginx.tar
+
+   32  docker import - mynginx < nginx.tar 
+
+   33  docker images
+
+   34  ip a s
+
+   35  ls 
+
+   36  docker save -o mynginx.tar nginx
+
+   37  ls -l 
+
+   38  docker images 
+
+   39  docker import - mynginx2 < mynginx.tar
+
+   40  docker images 
+
+   41  docker rmi $(docker images)
+
+   42  docker images 
+
+   43  docker ps -a 
+
+   44  docker inspect 
+
+   45  docker inspect c8a21dfa956a
+
+   46  ls -l 
+
+   47  docker load < nginx.tar 
+
+   48  docker pull nginx
+
+   49  vim /var/lib/docker/tmp/docker-import-824211921/bin/json
+
+   50  docker images
+
+   51  docker ps -a 
+
+   52  docker load < mynginx.tar 
+
+   53  docker images
+
+   54  docker rm -f c8a21dfa956a 
+
+   55  docker rmi $(docker images)
+
+   56  docker images
+
+   57  docker load < mynginx.tar 
+
+   58  docker images
+
+   59  history
