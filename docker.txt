@@ -137,3 +137,287 @@ day 2
    58  docker images
 
    59  history
+   
+   Day 3:minucube and kubectl
+   =============================
+   
+   1  pwd
+
+    2  ping 8.8.8.8
+
+    3  exit
+
+    4  ping 8.8.8.8
+
+    5  reboot
+
+    6  ip a
+
+    7  ip a s
+
+    8  sudo su
+
+    9  ping 8.8.8.8
+
+   10  list -1
+
+   11  klist
+
+   12  ping 8.8.8.8
+
+   13  apt-get update
+
+   14  apt-get install -y tasksel
+
+   15  tasksel
+
+   16  history 
+
+   17  ip a s
+
+   18  apt-get install -y openssh-server
+
+   19  systemctl status sshd
+
+   20  systemctl  sshd
+
+   21  systemctl status sshd
+
+   22  systemctl start sshd
+
+   23  ufw allow 22
+
+   24  systemctl start sshd
+
+   25  journalctl -xe
+
+   26  ZQ
+
+   27  reboot
+
+   28  systemctl status ssh
+
+   29  systemctl stop ssh.service
+
+   30  systemctl start ssh.service
+
+   31  apt-get remove -y openssh-server
+
+   32  apt-get autoremove
+
+   33  apt-get update
+
+   34  apt-get upgrade -y
+
+   35  apt update
+
+   36  apt install -y ssh
+
+   37  systemctl stop ssh
+
+   38  systemctl restart ssh
+
+   39  /usr/sbin/
+
+   40  /usr/sbin/sshd -T
+
+   41  /etc/init.d/sshd restart
+
+   42  service ssh stop
+
+   43  service ssh start
+
+   44  service ssh restart
+
+   45  telnet ssh 22
+
+   46  ufw allow ssh
+
+   47  apt-get purge openssh-server
+
+   48  apt-get remove openssh-server -Y
+
+   49  apt-get remove openssh-server -y
+
+   50  init 6
+
+   51  ssh localhost
+
+   52  ssh
+
+   53  apt-get install . -y
+
+   54  history
+
+   55  apt-get install . -y
+
+   56  apt-get install openssh-server-y
+
+   57  apt-get install openssh-server -y
+
+   58  service ssh status
+
+   59  ufw allow 22
+
+   60  tasksel
+
+   61  apt update
+
+   62  ping 8.8.8.8
+
+   63  ip a s
+
+   64  ping 8.8.8.8
+
+   65  ip a s
+
+   66  reboot
+
+   67  tasksel
+
+   68  reboot
+
+   69  ls
+
+   70  ls -lrth
+
+   71  ./VBoxLinuxAdditions.run 
+
+   72  init 6
+
+   73  ping 8.8.8.8
+
+   74  apt update
+
+   75  apt-get update
+
+   76  apt-get upgrade -y
+
+   77  apt-get install build-essential dkms curl linux-headers-$(uname -r) -y
+
+   78  ls
+
+   79  cd Desktop
+
+   80  ls
+
+   81  apt-get remove docker docker-engine docker.io containerd runc -y
+
+   82  apt-get update
+
+   83  apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release -y
+
+   84  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+
+   85    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+   86  apt-get update -y
+
+   87  apt-get install docker-ce docker-ce-cli containerd.io -y
+
+   88  docker --version
+
+   89  history|tail -15
+
+   90  history|tail -15 > history.sh
+
+   91  vi history.sh 
+
+   92  rm history.sh 
+
+   93  exit
+
+   94  ls a
+
+   95  ls -a
+
+   96  cd .config
+
+   97  ls
+
+   98  rm dconf
+
+   99  cd ..
+
+  100  exit
+
+  101  apt get update
+
+  102  apt update
+
+  103  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+  104  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+
+  105    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+  106  sudo apt-get update
+
+  107  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+
+  108    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+  109  sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+  110  apt update; apt upgrade-y
+
+  111  apt update;apt upgrade -y
+
+  112  kill -9 3443
+
+  113  apt update
+
+  114  apt upgrade-y
+
+  115  apt upgrade -y
+
+  116  exit
+
+  117  apt update -y
+
+  118  history
+
+  119  apt install build-essential dkms linux-headers-$(uname -r)
+
+  120  exit
+
+  121  apt getupdate -y
+
+  122  apt update -y
+
+  123  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+  124  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+  125  minikube start
+
+  126  dpkg
+
+  127  dpkg --configure -a
+
+  128  poweroff
+
+  129  minikube start
+
+  130  exit
+
+  131  osboxes.org
+
+  132  sysctl fs.protected_regular=0
+  133  minikube start --driver=none
+  134  apt install -y conntrack
+  135  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  136  sudo apt-get update
+  137  sudo apt-get install -y apt-transport-https ca-certificates curl
+  138  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+  139  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+  140  sudo apt-get update
+  141  sudo apt-get install -y kubectl
+  142  kubectl cluster-info
+  143  dump
+  144  kubectl cluster-info dump
+  145  kubectl get pods -A
+  146  minikube stop
+  147  minikube start --driver=none
+  148  kubectl version
+  149  kubectl cluster-info
